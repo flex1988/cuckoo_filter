@@ -16,6 +16,8 @@ struct cuckoo_filter {
     int bucket_size;
     int poweroftwo;
     int evicate;
+    int evicate_fp;
+    int evicate_index;
     hash_func_t hash;
     fp_func_t fp;
 };

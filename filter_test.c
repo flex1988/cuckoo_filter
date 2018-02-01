@@ -5,7 +5,7 @@
 
 int main() {
     struct cuckoo_filter *filter;
-    filter = cuckoo_init(16, 4, 512, murmurhash, fingerprint);
+    filter = cuckoo_init(22, 4, 512, murmurhash, fingerprint);
     int inserts = filter->bucket_capacity * filter->bucket_size;
 
     for (int i = 0; i < inserts; i++) {
